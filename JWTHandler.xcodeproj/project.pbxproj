@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B09F3AD22943ABD00269162 /* JWTHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B09F3AC22943ABD00269162 /* JWTHandler.swift */; };
 		4B36D4E72292FC6300DE94C3 /* JWTHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B36D4E52292FC6300DE94C3 /* JWTHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B09F3AC22943ABD00269162 /* JWTHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTHandler.swift; sourceTree = "<group>"; };
 		4B36D4E22292FC6300DE94C3 /* JWTHandler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JWTHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B36D4E52292FC6300DE94C3 /* JWTHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWTHandler.h; sourceTree = "<group>"; };
 		4B36D4E62292FC6300DE94C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			children = (
 				4B36D4E52292FC6300DE94C3 /* JWTHandler.h */,
 				4B36D4E62292FC6300DE94C3 /* Info.plist */,
+				4B09F3AC22943ABD00269162 /* JWTHandler.swift */,
 			);
 			path = JWTHandler;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					4B36D4E12292FC6300DE94C3 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B09F3AD22943ABD00269162 /* JWTHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		4B36D4EB2292FC6300DE94C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ljubinkovicd.JWTHandler;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		4B36D4EC2292FC6300DE94C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
