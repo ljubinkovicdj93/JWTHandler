@@ -1,21 +1,22 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "JWTHandler"
-  spec.version      = "0.0.1"
-  spec.summary      = "A short description of JWTHandler."
+  spec.version      = "1.0.0"
+  spec.summary      = "Handler for incoming JWT's. Decodes JWT, saves it to keychain, etc..."
 
-  spec.description  = <<-DESC
-                   DESC
+  spec.description  = "Handler for incoming JWT's. Decodes JWT, saves it to keychain, etc... Add more here..."
 
-  spec.homepage     = "http://EXAMPLE/JWTHandler"
+  spec.homepage     = "https://github.com/ljubinkovicdj93/JWTHandler"
 
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = "MIT"
 
-  spec.author             = { "Djordje Ljubinkovic" => "djordje.ljubinkovic@symphony.is" }
+  spec.author       = { "Djordje Ljubinkovic" => "ljubinkovicdj93@gmail.com" }
 
-  spec.source       = { :git => "http://EXAMPLE/JWTHandler.git", :tag => "#{spec.version}" }
+  spec.platform		= :ios, "12.2"
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source       = { :git => "https://github.com/ljubinkovicdj93/JWTHandler.git", :tag => "#{spec.version}" }
+
+  spec.source_files  = "JWTHandler/**/*"
+
+  spec.swift_version = "5.0"
 end
